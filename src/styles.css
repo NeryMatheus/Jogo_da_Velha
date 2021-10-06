@@ -1,1 +1,47 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: blanchedalmond;
+}
+
+h1{
+    text-align: center;
+    padding-top: 100px;
+    text-transform: uppercase;
+}
+p{
+    text-align: center;
+    padding-top: 10px;
+}
+
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-top: 10px;
+}
+
+td{
+    width: 2em;
+    height: 2em;
+    border: 2px solid black;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+}
+#ct1{
+    width: 300px;
+    height: 190px;
+    margin-top: 50px;
+    background-color: cornsilk;
+    border: 2px solid black;
+}
+#table{
+    padding-left: 98px;
+}

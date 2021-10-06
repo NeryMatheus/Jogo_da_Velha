@@ -1,0 +1,16 @@
+<h1>Jogo da velha</h1>
+<div id="container">
+    <div id="ct1">
+        <p *ngIf="!winner">Jogador: {{currentPlayer}}</p>
+        <p *ngIf="winner">Vencedor: {{winner}}</p>
+        <p><button (click)="reset()">Reiniciar partida</button></p>
+
+        <div id="table">
+            <table>
+                <tr *ngFor="let line of [0, 1, 2]">
+                    <td *ngFor="let col of [0, 1, 2]" (click)="processPlay(line, col)">{{board[line][col]}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
